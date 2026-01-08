@@ -1,0 +1,115 @@
+.login-page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #2B032D, #4c0550);
+}
+
+.login-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    background-color: #2B032D;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 40px rgba(170, 0, 255, 0.25);
+}
+
+.s1de {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    background: #f3eaff;
+    color: #2B032D;
+    font-weight: 300;
+    font-size: 16px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    animation: fadeIn 0.6s ease;
+}
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.text-grupo {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.side h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.side p {
+    font-size: 18px;
+    margin: 0;
+    text-align: center;
+    line-height: 1.5;
+    opacity: 0.7;
+}
+
+
+
+.grupo-input {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.otp-input {
+    width: 55px;
+    height: 55px;
+    font-size: 26px;
+    text-align: center;
+    background: white;
+    border: 2px solid #c4a1ff;
+    border-radius: 12px;
+    transition: 0.25s ease;
+    outline: none;
+    font-weight: 600;
+    color: #2B032D;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+
+.otp-input:focus {
+    border-color: #8f3aff;
+    box-shadow: 0 0 12px rgba(157, 74, 255, 0.6);
+    transform: scale(1.07);
+}
+
+
+.otp-input:not(:placeholder-shown):not(:focus) {
+    animation: pulse 0.18s ease;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.92); }
+    100% { transform: scale(1); }
+}
+
+
+
+.btn-grupo {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+

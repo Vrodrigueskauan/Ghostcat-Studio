@@ -1,0 +1,60 @@
+
+
+
+.testemunhas-section {
+  position: relative;    
+  width: 100vw;
+  
+  
+}
+
+
+.testemunhas-bg {
+  position: absolute;
+  top: 15%;                
+  width: 100vw;  
+  min-width: 2700px;         
+  height: 100vh;            
+  z-index: 0;          
+  pointer-events: none;  
+  display: block;
+
+  
+}
+
+
+.testemunhas-svg {
+  width: 100%;
+  min-width: 1900px;
+  height: 100%;
+  min-height: 650px;
+  display: block;
+  margin : 0; 
+
+}
+
+
+.conteudo-testemunhas {
+  position: relative;
+  z-index: 2;           
+  padding: 48px 16px;   
+  box-sizing: border-box;
+  margin-right: 15%; 
+
+}
+
+
+.testemunhas-bg.debug {
+  background: rgba(255,0,0,0.08);
+  outline: 1px dashed rgba(255,0,0,0.18);
+}
+
+
+@media (max-width: 768px) {
+  .testemunhas-bg {
+    height: 28vh;
+    min-height: 140px;
+    width: 130%;
+    margin-right: -16%;
+  }
+}

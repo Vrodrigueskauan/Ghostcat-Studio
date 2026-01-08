@@ -1,0 +1,78 @@
+.botao-premium {
+  position: relative;
+  padding: 16px 42px;
+  border-radius: 999px;
+  border: 1px solid rgba(180, 120, 255, 0.25);
+  background: linear-gradient(135deg, #120016, #3b0a57, #120016);
+  color: #e9d5ff;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+
+  box-shadow:
+    0 10px 40px rgba(120, 40, 255, 0.35),
+    0 0 18px rgba(120, 40, 255, 0.25);
+
+  transition: 
+    box-shadow 0.3s ease,
+    filter 0.3s ease;
+
+    margin: 20px;
+}
+
+.botao-premium:hover {
+  filter: brightness(1.15);
+  box-shadow:
+    0 16px 60px rgba(160, 90, 255, 0.55),
+    0 0 35px rgba(160, 90, 255, 0.45);
+}
+
+.botao-premium span {
+  position: relative;
+  z-index: 3;
+}
+
+
+.estrela {
+  position: absolute;
+  bottom: -20px;
+  width: 4px;
+  height: 4px;
+  background: radial-gradient(circle, #c084fc, #7c1cff);
+  border-radius: 50%;
+  opacity: 0;
+  filter: blur(0.6px);
+  animation-name: subirSuave;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  z-index: 2;
+}
+
+
+@keyframes subirSuave {
+  0% {
+    transform: translateY(0) scale(0.5);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translateY(-360px) scale(1.2);
+    opacity: 0;
+  }
+}
+
+
+.botao-premium .estrela {
+  opacity: 0;
+}
+
+.botao-premium:hover .estrela {
+  opacity: 1;
+}

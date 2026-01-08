@@ -1,0 +1,46 @@
+.carrinho-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #2B032D;
+    overflow-x: hidden;
+    font-size: clamp(0.9rem, 1.8vw, 1rem);
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+
+.carrinho-content{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #37003b;
+    border-radius: 20px;
+}
+
+
+
+.carrinho-banner{
+    background-color: #410445;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    color: #b6a7b5;
+}
+
+.carrinho-banner svg{
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 110px;
+    top: 80%;
+}

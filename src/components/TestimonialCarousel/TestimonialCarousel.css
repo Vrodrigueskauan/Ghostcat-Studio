@@ -1,0 +1,118 @@
+
+.testimonial-section {
+  width: 100%;
+  padding: 80px 0;
+  overflow: hidden;
+  text-align: center;
+  color: #fff;
+}
+
+.carousel-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  margin-bottom: 60px;
+  color: #f5e9ff;
+  text-shadow: 0 3px 8px rgba(255, 255, 255, 0.2);
+}
+
+.carousel-wrapper {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-track {
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  will-change: transform;
+  transition: transform 0.3s linear;
+}
+
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 30px;
+  width: 320px;
+  height: 320px;
+  padding: 25px;
+  color: #e0d2ff;
+  font-family: "Playfair Display", serif;
+  position: relative;
+  flex-shrink: 0;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  transition: all 0.4s ease;
+  cursor: default;
+}
+
+.card:hover {
+
+  box-shadow: 0 10px 30px rgba(160, 70, 255, 0.4);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+
+.circle {
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(145deg, #6e1b99, #9f47ff);
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  box-shadow: 0 0 15px rgba(159, 71, 255, 0.6);
+}
+
+
+.card h3 {
+  margin-top: 80px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+}
+
+
+.card p {
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #d7c4f8;
+}
+
+
+@media (max-width: 1024px) {
+  .card {
+    width: 280px;
+  }
+
+  .carousel-track {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 240px;
+    height: 280px;
+  }
+
+  .carousel-track {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 200px;
+    height: 250px;
+    padding: 20px;
+  }
+
+  .carousel-title {
+    font-size: 1.6rem;
+  }
+}

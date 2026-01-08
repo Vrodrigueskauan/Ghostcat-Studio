@@ -1,0 +1,30 @@
+.parallax-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background: #111;
+}
+
+/* Imagem que vai se mover */
+.parallax-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 140%; /* ligeiramente maior pra evitar bordas */
+  height: 120%;
+  background-size: cover;
+  background-position: center;
+  transform: translate3d(-50%, -50%, 0);
+  will-change: transform;
+  transition: transform 0.1s linear;
+}
+
+/* Conteúdo fixo sobreposto */
+.parallax-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  padding-top: 40vh;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+}
