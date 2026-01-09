@@ -197,7 +197,7 @@ export default function Home() {
                     duration: 0.6,
                     stagger: 0.1,
                     ease: "expo.out",
-                    once: true,
+                   
                     paused: true
                 });
 
@@ -601,7 +601,7 @@ useLayoutEffect(() => {
 
 
 
-                        <motion.section className="services-section">
+                        <motion.section className="services-section" data-speed="0.9">
                             <motion.h1
 
                                 className="services-title"
@@ -678,7 +678,7 @@ useLayoutEffect(() => {
 
                             <div className="about-content">
                                 <motion.img
-                                    src="/img/icon.png"
+                                    src="../../public/img/icon.png"
                                     alt="Foto da tatuadora"
                                     className="about-img"
                                     initial={{ opacity: 0, x: -100 }}

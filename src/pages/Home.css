@@ -397,6 +397,7 @@ pointer-events: all;
     align-items: center;
 
     padding: 80px;
+    margin-top: 5%;
 
     color: #8F6BCF;
     box-sizing: border-box;
@@ -479,7 +480,7 @@ pointer-events: all;
     height: auto;
 
     margin: 0 auto;
-    margin-top: 5px;
+   
 
     text-align: center;
     font-family: 'galter';

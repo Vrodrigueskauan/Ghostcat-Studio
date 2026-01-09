@@ -32,7 +32,7 @@ export default function TestemunhasBackground({ className = "" }) {
           start: "top 60%",
           end: "bottom 90%",
           // markers: true,
-          scrub: 2.5, 
+          scrub: 2, 
         },
       });
     }, wrapperRef);
