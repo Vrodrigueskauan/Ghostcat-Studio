@@ -678,7 +678,7 @@ useLayoutEffect(() => {
 
                             <div className="about-content">
                                 <motion.img
-                                    src="../../public/img/icon.png"
+                                    src="./img/icon.png"
                                     alt="Foto da tatuadora"
                                     className="about-img"
                                     initial={{ opacity: 0, x: -100 }}
